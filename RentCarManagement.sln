@@ -2,9 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCarManagement.Server", "src\RentCarManagement.Server\RentCarManagement.Server.csproj", "{B4F47CC9-A761-4401-A273-9DF7D9136C95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCarManagement.Client", "RentCarManagement.Client\RentCarManagement.Client.csproj", "{EF365A56-6413-4A95-B518-F41C525CBA9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCarManagement.Client", "src\RentCarManagement.Client\RentCarManagement.Client.csproj", "{EF365A56-6413-4A95-B518-F41C525CBA9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCarManagement.Shared", "RentCarManagement.Shared\RentCarManagement.Shared.csproj", "{E4D22659-EBFF-4BF3-A12B-07DF90B0DAD0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCarManagement.Shared", "src\RentCarManagement.Shared\RentCarManagement.Shared.csproj", "{E4D22659-EBFF-4BF3-A12B-07DF90B0DAD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
