@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using RentCarManagement.Configurations.Entities;
 using RentCarManagement.Models;
 using Shared.Domain;
 
@@ -21,9 +22,15 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Booking> Bookings { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder builder)
     {
-        base.OnModelCreating(modelBuilder);
-        
+        base.OnModelCreating(builder);
+
+        builder.ApplyConfiguration(new ColourSeedConfiguration());
+        builder.ApplyConfiguration(new MakeSeedConfiguration());
+        builder.ApplyConfiguration(new ModelSeedConfiguration());
+        builder.ApplyConfiguration(new RoleSeedConfiguration());
+        builder.ApplyConfiguration(new UserSeedConfiguration());
+        builder.ApplyConfiguration(new UserRoleSeedConfiguration());
     }
 }
