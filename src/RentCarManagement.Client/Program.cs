@@ -4,6 +4,7 @@ using Client;
 using Client.Contracts;
 using Client.Services;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
+using RentCarManagement.Client;
 using Toolbelt.Blazor.Extensions.DependencyInjection;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
