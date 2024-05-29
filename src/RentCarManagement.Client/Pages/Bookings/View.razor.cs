@@ -1,9 +1,11 @@
 using Client.Contracts;
 using Client.Static;
 using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 using Shared.Domain;
 
 namespace RentCarManagement.Client.Pages.Bookings;
+
 public partial class View
 {
     [Parameter] public int id { get; set; }

@@ -1,0 +1,8 @@
+﻿@page "/colours/edit/{id:int}"
+@using global::Client.Contracts
+@using global::Client.Static
+@using global::Shared.Domain
+
+<h3>Edit</h3>
+
+<FormComponent ButtonText="Update" OnValidSubmit="@EditColour" colour="colour" />

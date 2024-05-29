@@ -1,0 +1,10 @@
+﻿@page "/colours/create/"
+@using global::Client.Contracts
+@using global::Client.Static
+@using global::Shared.Domain
+
+<h3 class="card-title"> Create New Colour</h3>
+<hr />
+<br />
+
+<FormComponent ButtonText="Create Colour" OnValidSubmit="@CreateColour" colour="colour" />
