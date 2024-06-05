@@ -21,4 +21,10 @@
       <ProjectReference Include="..\RentCarManagement.Shared\RentCarManagement.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Pages\Makes\" />
+      <Folder Include="Pages\Models\" />
+      <Folder Include="Pages\Vehicles\" />
+    </ItemGroup>
+
 </Project>

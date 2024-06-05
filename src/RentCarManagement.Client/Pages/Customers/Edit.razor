@@ -1,0 +1,27 @@
+﻿@page "/customers/edit/{id:int}"
+@using global::Client.Contracts
+@using global::Client.Static
+@using global::Shared.Domain
+
+<h3>Edit</h3>
+
+<FormComponent ButtonText="Update" OnValidSubmit="@EditCustomer" customer="customer" />
+
+@code
+{
+    [Inject] IHttpRepository<Customer> _client { get; set; }
+    [Inject] NavigationManager _navManager { get; set; }
+    
+    [Parameter] public int id { get; set; }
+    Customer customer = new Customer();
+
+    protected async override Task OnParametersSetAsync()
+    {
+        customer = await _client.Get(Endpoints.CustomersEndpoint, id);
+    }
+
+    async Task EditCustomer()
+    {
+        await _client.Update(Endpoints.CustomersEndpoint, customer, id);
+    }
+}

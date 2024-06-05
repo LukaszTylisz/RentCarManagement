@@ -1,0 +1,11 @@
+﻿@page "/customers/create/"
+@using global::Client.Contracts
+@using global::Client.Services
+@using global::Client.Static
+@using global::Shared.Domain
+
+<h3 class="card-title"> Create New Customer</h3>
+<hr />
+<br />
+
+<FormComponent ButtonText="Create Customer" OnValidSubmit="@CreateCustomer" customer="customer" />
